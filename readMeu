@@ -10,3 +10,9 @@ pip install -r requirements.txt
 
 django-admin startproject core .
 
+pip install python-dotenv
+
+pip install django-cors-headers
+
+pip install django-requestlogs
+

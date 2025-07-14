@@ -77,8 +77,8 @@ THIRD_APPS = [ # são as Lib/app que instalamos no projeto
 ]
 
 PROJECT_APPS = [ # são os apps que criamos no projeto 
-        # 'apps.base',		# update 11/03/2024
-        # 'apps.myapp',   # Removido esses apps que nao criamos ainda.
+        'apps.base',		# update 11/03/2024
+        'apps.pages',   # Removido esses apps que nao criamos ainda.
 ]
 
 # INSTALLED_APPS é a variavel que django entende para fazer a leitura \
@@ -102,10 +102,11 @@ ROOT_URLCONF = 'core.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [TEMPLATE_DIR],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
+                'django.template.context_processors.debug',
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',

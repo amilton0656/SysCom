@@ -16,3 +16,7 @@ pip install django-cors-headers
 
 pip install django-requestlogs
 
+py manage.py startapp base
+
+py manage.py startapp pages
+
